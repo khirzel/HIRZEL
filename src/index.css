@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-serif: "EB Garamond", "Georgia", serif;
+  
+  --color-brand-black: #000000;
+  --color-brand-white: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-white text-brand-black font-serif antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-black tracking-[0.15em] uppercase leading-none;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+.section-label {
+  @apply font-sans text-[10px] uppercase tracking-[0.3em] font-bold mb-6 block;
+}
+
+.architectural-line {
+  @apply border-brand-black;
+}
+
+.v-line {
+  @apply w-px h-full bg-brand-black/10;
+}
+
+.serif-normal {
+  @apply font-serif;
+}
